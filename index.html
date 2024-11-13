@@ -1,147 +1,83 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>CSS Selectors and Specificity</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      background-color: #f0f0f0;
-      color: #333;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-bottom: 20px;
-    }
-
-    th, td {
-      padding: 10px;
-      text-align: left;
-      border-bottom: 1px solid #ddd;
-    }
-
-    th {
-      background-color: #f2f2f2;
-    }
-
-    .code {
-      font-family: monospace;
-      background-color: #eee;
-      padding: 5px;
-      border-radius: 3px;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cheat Sheet</title>
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
+  <h1>HTML Table Reference</h1>
 
-  <h1>CSS Selectors and Specificity</h1>
 
-  <h2>Introduction</h2>
-  <p>CSS selectors are used to target specific HTML elements and apply styles to them. Specificity determines which styles are applied when multiple rules target the same element.</p>
-
-  <h2>Types of Selectors</h2>
+  <h2>Table Tags</h2>
+ 
   <table>
     <thead>
       <tr>
-        <th>Selector</th>
-        <th>Example</th>
+        <th>Tag</th>
+        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td>Element Selector</td>
-        <td><span class="code">p</span></td>
-        <td>Targets all elements of a specific type (e.g., all paragraph elements).</td>
+        <td>&lttable&gt</td>
+        <td><span class="code">Table</span></td>
+        <td>The wrapper element for all HTML tables.</td>
       </tr>
       <tr>
-        <td>Class Selector</td>
-        <td><span class="code">.highlight</span></td>
-        <td>Targets elements with a specific class attribute (e.g., elements with the class "highlight").</td>
+        <td>&ltthead&gt</td>
+        <td><span class="code">Table Head</span></td>
+        <td>The set of rows defining the column headers in a table.</td>
       </tr>
       <tr>
-        <td>ID Selector</td>
-        <td><span class="code">#main</span></td>
-        <td>Targets a single element with a specific ID attribute (e.g., the element with the ID "main").</td>
+        <td>&lttbody&gt</td>
+        <td><span class="code">Table Body</span></td>
+        <td>The set of rows containing actual table data.</td>
       </tr>
       <tr>
-        <td>Attribute Selector</td>
-        <td><span class="code">a[href]</span></td>
-        <td>Targets elements with a specific attribute (e.g., anchor elements with an href attribute).</td>
+        <td>&lttr&gt</td>
+        <td><span class="code">Table Row</span></td>
+        <td>The table row container.</td>
       </tr>
       <tr>
-        <td>Pseudo-class Selector</td>
-        <td><span class="code">:hover</span></td>
-        <td>Targets elements in a specific state (e.g., when the mouse hovers over an element).</td>
+        <td>&lttd&gt</td>
+        <td><span class="code">Table Data</span></td>
+        <td>The table row container.</td>
       </tr>
       <tr>
-        <td>Descendant Selector</td>
-        <td><span class="code">div p</span></td>
-        <td>Targets all paragraph elements that are descendants of a div element.</td>
-      </tr>
-      <tr>
-        <td>Child Selector</td>
-        <td><span class="code">div > p</span></td>
-        <td>Targets all paragraph elements that are direct children of a div element.</td>
-      </tr>
-      <tr>
-        <td>Adjacent Sibling Selector</td>
-        <td><span class="code">h1 + p</span></td>
-        <td>Targets the first paragraph element that is immediately after an h1 element.</td>
-      </tr>
-      <tr>
-        <td>General Sibling Selector</td>
-        <td><span class="code">h1 ~ p</span></td>
-        <td>Targets all paragraph elements that are siblings of an h1 element.</td>
+        <td>&lttfoot&gt</td>
+        <td><span class="code">Table Foot</span></td>
+        <td>The set of rows defining the folder in a table.</td>
       </tr>
     </tbody>
   </table>
 
-  <h2>Specificity</h2>
-  <p>Specificity determines which styles are applied when multiple rules target the same element. The more specific a selector is, the higher its priority.</p>
-
+  <h2>Table Attributes</h2>
+  
   <table>
     <thead>
       <tr>
-        <th>Specificity Level</th>
+        <th>Attribute</th>
+        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td>Inline Styles</td>
-        <td>Styles defined within the HTML element (highest priority).</td>
+        <td>colspan</td>
+        <td>Column Span</td>
+        <td>Defines how many columns a td element should span.</td>
       </tr>
       <tr>
-        <td>ID Selectors</td>
-        <td>Selectors using the # symbol (second highest priority).</td>
+        <td>rowspan</td>
+        <td>Row Span</td>
+        <td>Define how many rows a td element should span.</td>
       </tr>
-      <tr>
-        <td>Class Selectors, Attribute Selectors, Pseudo-class Selectors</td>
-        <td>Selectors using the . symbol or square brackets (third highest priority).</td>
-      </tr>
-      <tr>
-        <td>Element Selectors</td>
-        <td>Selectors targeting element types (lowest priority).</td>
-      </tr>
+      
     </tbody>
   </table>
 
-  <h2>Example</h2>
-  <p>Consider these CSS rules:</p>
-
-  <pre class="code">
-    p {
-      color: blue;
-    }
-
-    .highlight {
-      color: red;
-    }
-
-    #main p {
-      color: green;
-    }
-  </pre>
+  
